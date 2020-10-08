@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71F27C2B252F5141007F388A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C2A252F5141007F388A /* AppDelegate.swift */; };
+		71F27C34252F5142007F388A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C33252F5142007F388A /* Assets.xcassets */; };
+		71F27C37252F5142007F388A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C35252F5142007F388A /* LaunchScreen.storyboard */; };
+		71F27C42252F5142007F388A /* BankOpenAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C41252F5142007F388A /* BankOpenAssignmentTests.swift */; };
+		71F27C4D252F5142007F388A /* BankOpenAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C4C252F5142007F388A /* BankOpenAssignmentUITests.swift */; };
+		71F27C82252F516F007F388A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C5E252F516F007F388A /* Localizable.strings */; };
+		71F27C83252F516F007F388A /* BusSchedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C61252F516F007F388A /* BusSchedule.json */; };
+		71F27C8D252F516F007F388A /* BusScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C71252F516F007F388A /* BusScheduleViewModel.swift */; };
+		71F27C8E252F516F007F388A /* TripTimingInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C73252F516F007F388A /* TripTimingInfoTableCell.xib */; };
+		71F27C8F252F516F007F388A /* NoTripTimingPlaceholderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C74252F516F007F388A /* NoTripTimingPlaceholderCell.xib */; };
+		71F27C90252F516F007F388A /* RouteInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C75252F516F007F388A /* RouteInfoCollectionViewCell.xib */; };
+		71F27C91252F516F007F388A /* TripTimingInfoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C76252F516F007F388A /* TripTimingInfoTableCell.swift */; };
+		71F27C92252F516F007F388A /* NoTripTimingPlaceholderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C77252F516F007F388A /* NoTripTimingPlaceholderCell.swift */; };
+		71F27C93252F516F007F388A /* RouteInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C78252F516F007F388A /* RouteInfoCollectionViewCell.swift */; };
+		71F27C94252F516F007F388A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F27C7A252F516F007F388A /* Main.storyboard */; };
+		71F27C95252F516F007F388A /* DisplayableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C7D252F516F007F388A /* DisplayableModels.swift */; };
+		71F27C96252F516F007F388A /* BusSchedulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C7F252F516F007F388A /* BusSchedulesViewController.swift */; };
+		71F27C97252F516F007F388A /* BusScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27C81252F516F007F388A /* BusScheduleView.swift */; };
+		71F27CB9252F527E007F388A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27CB4252F527D007F388A /* Constants.swift */; };
+		71F27CBA252F527E007F388A /* BusScheduleStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27CB5252F527D007F388A /* BusScheduleStrings.swift */; };
+		71F27CBB252F527E007F388A /* TableCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27CB6252F527E007F388A /* TableCollectionExtension.swift */; };
+		71F27CBC252F527E007F388A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27CB7252F527E007F388A /* StringExtension.swift */; };
+		71F27CBD252F527E007F388A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 71F27CB8252F527E007F388A /* README.md */; };
+		71F27D12252F73F2007F388A /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D06252F73F2007F388A /* CoreData.xcdatamodeld */; };
+		71F27D13252F73F2007F388A /* ContextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D09252F73F2007F388A /* ContextManager.swift */; };
+		71F27D14252F73F2007F388A /* DatastoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D0A252F73F2007F388A /* DatastoreCoordinator.swift */; };
+		71F27D15252F73F2007F388A /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D0B252F73F2007F388A /* PersistenceManager.swift */; };
+		71F27D16252F73F2007F388A /* TripTimingEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D0D252F73F2007F388A /* TripTimingEntity+CoreDataClass.swift */; };
+		71F27D17252F73F2007F388A /* RoutesInfoEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D0E252F73F2007F388A /* RoutesInfoEntity+CoreDataClass.swift */; };
+		71F27D18252F73F2007F388A /* RoutesInfoEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D0F252F73F2007F388A /* RoutesInfoEntity+CoreDataProperties.swift */; };
+		71F27D19252F73F2007F388A /* TripTimingEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D10252F73F2007F388A /* TripTimingEntity+CoreDataProperties.swift */; };
+		71F27D1A252F73F2007F388A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F27D11252F73F2007F388A /* DatabaseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71F27C3E252F5142007F388A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F27C1F252F5141007F388A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71F27C26252F5141007F388A;
+			remoteInfo = BankOpenAssignment;
+		};
+		71F27C49252F5142007F388A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71F27C1F252F5141007F388A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71F27C26252F5141007F388A;
+			remoteInfo = BankOpenAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71F27C27252F5141007F388A /* BankOpenAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankOpenAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F27C2A252F5141007F388A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71F27C33252F5142007F388A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71F27C36252F5142007F388A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71F27C38252F5142007F388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F27C3D252F5142007F388A /* BankOpenAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankOpenAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F27C41252F5142007F388A /* BankOpenAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOpenAssignmentTests.swift; sourceTree = "<group>"; };
+		71F27C43252F5142007F388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F27C48252F5142007F388A /* BankOpenAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankOpenAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F27C4C252F5142007F388A /* BankOpenAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOpenAssignmentUITests.swift; sourceTree = "<group>"; };
+		71F27C4E252F5142007F388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F27C5F252F516F007F388A /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71F27C60252F516F007F388A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		71F27C61252F516F007F388A /* BusSchedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BusSchedule.json; sourceTree = "<group>"; };
+		71F27C71252F516F007F388A /* BusScheduleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusScheduleViewModel.swift; sourceTree = "<group>"; };
+		71F27C73252F516F007F388A /* TripTimingInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripTimingInfoTableCell.xib; sourceTree = "<group>"; };
+		71F27C74252F516F007F388A /* NoTripTimingPlaceholderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoTripTimingPlaceholderCell.xib; sourceTree = "<group>"; };
+		71F27C75252F516F007F388A /* RouteInfoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteInfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		71F27C76252F516F007F388A /* TripTimingInfoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTimingInfoTableCell.swift; sourceTree = "<group>"; };
+		71F27C77252F516F007F388A /* NoTripTimingPlaceholderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoTripTimingPlaceholderCell.swift; sourceTree = "<group>"; };
+		71F27C78252F516F007F388A /* RouteInfoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		71F27C7B252F516F007F388A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71F27C7D252F516F007F388A /* DisplayableModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayableModels.swift; sourceTree = "<group>"; };
+		71F27C7F252F516F007F388A /* BusSchedulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusSchedulesViewController.swift; sourceTree = "<group>"; };
+		71F27C81252F516F007F388A /* BusScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusScheduleView.swift; sourceTree = "<group>"; };
+		71F27CB4252F527D007F388A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71F27CB5252F527D007F388A /* BusScheduleStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusScheduleStrings.swift; sourceTree = "<group>"; };
+		71F27CB6252F527E007F388A /* TableCollectionExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCollectionExtension.swift; sourceTree = "<group>"; };
+		71F27CB7252F527E007F388A /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		71F27CB8252F527E007F388A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		71F27D07252F73F2007F388A /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		71F27D09252F73F2007F388A /* ContextManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextManager.swift; sourceTree = "<group>"; };
+		71F27D0A252F73F2007F388A /* DatastoreCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatastoreCoordinator.swift; sourceTree = "<group>"; };
+		71F27D0B252F73F2007F388A /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		71F27D0D252F73F2007F388A /* TripTimingEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TripTimingEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71F27D0E252F73F2007F388A /* RoutesInfoEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutesInfoEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71F27D0F252F73F2007F388A /* RoutesInfoEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutesInfoEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71F27D10252F73F2007F388A /* TripTimingEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TripTimingEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71F27D11252F73F2007F388A /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71F27C24252F5141007F388A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C3A252F5142007F388A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C45252F5142007F388A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71F27C1E252F5141007F388A = {
+			isa = PBXGroup;
+			children = (
+				71F27CB8252F527E007F388A /* README.md */,
+				71F27C29252F5141007F388A /* BankOpenAssignment */,
+				71F27C40252F5142007F388A /* BankOpenAssignmentTests */,
+				71F27C4B252F5142007F388A /* BankOpenAssignmentUITests */,
+				71F27C28252F5141007F388A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71F27C28252F5141007F388A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C27252F5141007F388A /* BankOpenAssignment.app */,
+				71F27C3D252F5142007F388A /* BankOpenAssignmentTests.xctest */,
+				71F27C48252F5142007F388A /* BankOpenAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71F27C29252F5141007F388A /* BankOpenAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				71F27D05252F73F2007F388A /* DatabaseManager */,
+				71F27CB3252F527D007F388A /* Common */,
+				71F27C6F252F516F007F388A /* BusSchedule */,
+				71F27C5D252F516F007F388A /* SupportingFiles */,
+				71F27C2A252F5141007F388A /* AppDelegate.swift */,
+				71F27C33252F5142007F388A /* Assets.xcassets */,
+				71F27C35252F5142007F388A /* LaunchScreen.storyboard */,
+				71F27C38252F5142007F388A /* Info.plist */,
+			);
+			path = BankOpenAssignment;
+			sourceTree = "<group>";
+		};
+		71F27C40252F5142007F388A /* BankOpenAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C41252F5142007F388A /* BankOpenAssignmentTests.swift */,
+				71F27C43252F5142007F388A /* Info.plist */,
+			);
+			path = BankOpenAssignmentTests;
+			sourceTree = "<group>";
+		};
+		71F27C4B252F5142007F388A /* BankOpenAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C4C252F5142007F388A /* BankOpenAssignmentUITests.swift */,
+				71F27C4E252F5142007F388A /* Info.plist */,
+			);
+			path = BankOpenAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		71F27C5D252F516F007F388A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C5E252F516F007F388A /* Localizable.strings */,
+				71F27C61252F516F007F388A /* BusSchedule.json */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		71F27C6F252F516F007F388A /* BusSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C70252F516F007F388A /* ViewModel */,
+				71F27C72252F516F007F388A /* Cells */,
+				71F27C79252F516F007F388A /* Storyboard */,
+				71F27C7C252F516F007F388A /* Models */,
+				71F27C7E252F516F007F388A /* ViewController */,
+				71F27C80252F516F007F388A /* Views */,
+			);
+			path = BusSchedule;
+			sourceTree = "<group>";
+		};
+		71F27C70252F516F007F388A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C71252F516F007F388A /* BusScheduleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71F27C72252F516F007F388A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C73252F516F007F388A /* TripTimingInfoTableCell.xib */,
+				71F27C74252F516F007F388A /* NoTripTimingPlaceholderCell.xib */,
+				71F27C75252F516F007F388A /* RouteInfoCollectionViewCell.xib */,
+				71F27C76252F516F007F388A /* TripTimingInfoTableCell.swift */,
+				71F27C77252F516F007F388A /* NoTripTimingPlaceholderCell.swift */,
+				71F27C78252F516F007F388A /* RouteInfoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		71F27C79252F516F007F388A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C7A252F516F007F388A /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		71F27C7C252F516F007F388A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C7D252F516F007F388A /* DisplayableModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71F27C7E252F516F007F388A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C7F252F516F007F388A /* BusSchedulesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		71F27C80252F516F007F388A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71F27C81252F516F007F388A /* BusScheduleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71F27CB3252F527D007F388A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71F27CB4252F527D007F388A /* Constants.swift */,
+				71F27CB5252F527D007F388A /* BusScheduleStrings.swift */,
+				71F27CB6252F527E007F388A /* TableCollectionExtension.swift */,
+				71F27CB7252F527E007F388A /* StringExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		71F27D05252F73F2007F388A /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				71F27D06252F73F2007F388A /* CoreData.xcdatamodeld */,
+				71F27D08252F73F2007F388A /* CoreDataStack */,
+				71F27D0C252F73F2007F388A /* CoreDataEntity */,
+				71F27D11252F73F2007F388A /* DatabaseManager.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		71F27D08252F73F2007F388A /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				71F27D09252F73F2007F388A /* ContextManager.swift */,
+				71F27D0A252F73F2007F388A /* DatastoreCoordinator.swift */,
+				71F27D0B252F73F2007F388A /* PersistenceManager.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		71F27D0C252F73F2007F388A /* CoreDataEntity */ = {
+			isa = PBXGroup;
+			children = (
+				71F27D0D252F73F2007F388A /* TripTimingEntity+CoreDataClass.swift */,
+				71F27D0E252F73F2007F388A /* RoutesInfoEntity+CoreDataClass.swift */,
+				71F27D0F252F73F2007F388A /* RoutesInfoEntity+CoreDataProperties.swift */,
+				71F27D10252F73F2007F388A /* TripTimingEntity+CoreDataProperties.swift */,
+			);
+			path = CoreDataEntity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71F27C26252F5141007F388A /* BankOpenAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F27C51252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignment" */;
+			buildPhases = (
+				71F27C23252F5141007F388A /* Sources */,
+				71F27C24252F5141007F388A /* Frameworks */,
+				71F27C25252F5141007F388A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankOpenAssignment;
+			productName = BankOpenAssignment;
+			productReference = 71F27C27252F5141007F388A /* BankOpenAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71F27C3C252F5142007F388A /* BankOpenAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F27C54252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignmentTests" */;
+			buildPhases = (
+				71F27C39252F5142007F388A /* Sources */,
+				71F27C3A252F5142007F388A /* Frameworks */,
+				71F27C3B252F5142007F388A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71F27C3F252F5142007F388A /* PBXTargetDependency */,
+			);
+			name = BankOpenAssignmentTests;
+			productName = BankOpenAssignmentTests;
+			productReference = 71F27C3D252F5142007F388A /* BankOpenAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		71F27C47252F5142007F388A /* BankOpenAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71F27C57252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignmentUITests" */;
+			buildPhases = (
+				71F27C44252F5142007F388A /* Sources */,
+				71F27C45252F5142007F388A /* Frameworks */,
+				71F27C46252F5142007F388A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71F27C4A252F5142007F388A /* PBXTargetDependency */,
+			);
+			name = BankOpenAssignmentUITests;
+			productName = BankOpenAssignmentUITests;
+			productReference = 71F27C48252F5142007F388A /* BankOpenAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71F27C1F252F5141007F388A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					71F27C26252F5141007F388A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					71F27C3C252F5142007F388A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 71F27C26252F5141007F388A;
+					};
+					71F27C47252F5142007F388A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 71F27C26252F5141007F388A;
+					};
+				};
+			};
+			buildConfigurationList = 71F27C22252F5141007F388A /* Build configuration list for PBXProject "BankOpenAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 71F27C1E252F5141007F388A;
+			productRefGroup = 71F27C28252F5141007F388A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71F27C26252F5141007F388A /* BankOpenAssignment */,
+				71F27C3C252F5142007F388A /* BankOpenAssignmentTests */,
+				71F27C47252F5142007F388A /* BankOpenAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71F27C25252F5141007F388A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F27C83252F516F007F388A /* BusSchedule.json in Resources */,
+				71F27C37252F5142007F388A /* LaunchScreen.storyboard in Resources */,
+				71F27C90252F516F007F388A /* RouteInfoCollectionViewCell.xib in Resources */,
+				71F27C8F252F516F007F388A /* NoTripTimingPlaceholderCell.xib in Resources */,
+				71F27C82252F516F007F388A /* Localizable.strings in Resources */,
+				71F27C8E252F516F007F388A /* TripTimingInfoTableCell.xib in Resources */,
+				71F27CBD252F527E007F388A /* README.md in Resources */,
+				71F27C94252F516F007F388A /* Main.storyboard in Resources */,
+				71F27C34252F5142007F388A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C3B252F5142007F388A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C46252F5142007F388A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71F27C23252F5141007F388A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F27D17252F73F2007F388A /* RoutesInfoEntity+CoreDataClass.swift in Sources */,
+				71F27C91252F516F007F388A /* TripTimingInfoTableCell.swift in Sources */,
+				71F27C8D252F516F007F388A /* BusScheduleViewModel.swift in Sources */,
+				71F27C95252F516F007F388A /* DisplayableModels.swift in Sources */,
+				71F27D15252F73F2007F388A /* PersistenceManager.swift in Sources */,
+				71F27D12252F73F2007F388A /* CoreData.xcdatamodeld in Sources */,
+				71F27CBB252F527E007F388A /* TableCollectionExtension.swift in Sources */,
+				71F27D18252F73F2007F388A /* RoutesInfoEntity+CoreDataProperties.swift in Sources */,
+				71F27C97252F516F007F388A /* BusScheduleView.swift in Sources */,
+				71F27D16252F73F2007F388A /* TripTimingEntity+CoreDataClass.swift in Sources */,
+				71F27D14252F73F2007F388A /* DatastoreCoordinator.swift in Sources */,
+				71F27CBA252F527E007F388A /* BusScheduleStrings.swift in Sources */,
+				71F27D13252F73F2007F388A /* ContextManager.swift in Sources */,
+				71F27C2B252F5141007F388A /* AppDelegate.swift in Sources */,
+				71F27C93252F516F007F388A /* RouteInfoCollectionViewCell.swift in Sources */,
+				71F27D19252F73F2007F388A /* TripTimingEntity+CoreDataProperties.swift in Sources */,
+				71F27CBC252F527E007F388A /* StringExtension.swift in Sources */,
+				71F27C92252F516F007F388A /* NoTripTimingPlaceholderCell.swift in Sources */,
+				71F27C96252F516F007F388A /* BusSchedulesViewController.swift in Sources */,
+				71F27CB9252F527E007F388A /* Constants.swift in Sources */,
+				71F27D1A252F73F2007F388A /* DatabaseManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C39252F5142007F388A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F27C42252F5142007F388A /* BankOpenAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F27C44252F5142007F388A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F27C4D252F5142007F388A /* BankOpenAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71F27C3F252F5142007F388A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71F27C26252F5141007F388A /* BankOpenAssignment */;
+			targetProxy = 71F27C3E252F5142007F388A /* PBXContainerItemProxy */;
+		};
+		71F27C4A252F5142007F388A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71F27C26252F5141007F388A /* BankOpenAssignment */;
+			targetProxy = 71F27C49252F5142007F388A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71F27C35252F5142007F388A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71F27C36252F5142007F388A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71F27C5E252F516F007F388A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71F27C5F252F516F007F388A /* ja */,
+				71F27C60252F516F007F388A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		71F27C7A252F516F007F388A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71F27C7B252F516F007F388A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71F27C4F252F5142007F388A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71F27C50252F5142007F388A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71F27C52252F5142007F388A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71F27C53252F5142007F388A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71F27C55252F5142007F388A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankOpenAssignment.app/BankOpenAssignment";
+			};
+			name = Debug;
+		};
+		71F27C56252F5142007F388A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankOpenAssignment.app/BankOpenAssignment";
+			};
+			name = Release;
+		};
+		71F27C58252F5142007F388A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankOpenAssignment;
+			};
+			name = Debug;
+		};
+		71F27C59252F5142007F388A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = BankOpenAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankopen.com.BankOpenAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BankOpenAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71F27C22252F5141007F388A /* Build configuration list for PBXProject "BankOpenAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F27C4F252F5142007F388A /* Debug */,
+				71F27C50252F5142007F388A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71F27C51252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F27C52252F5142007F388A /* Debug */,
+				71F27C53252F5142007F388A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71F27C54252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F27C55252F5142007F388A /* Debug */,
+				71F27C56252F5142007F388A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71F27C57252F5142007F388A /* Build configuration list for PBXNativeTarget "BankOpenAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F27C58252F5142007F388A /* Debug */,
+				71F27C59252F5142007F388A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71F27D06252F73F2007F388A /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71F27D07252F73F2007F388A /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 71F27D07252F73F2007F388A /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 71F27C1F252F5141007F388A /* Project object */;
+}

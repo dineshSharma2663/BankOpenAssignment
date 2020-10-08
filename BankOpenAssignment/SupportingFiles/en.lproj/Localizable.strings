@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  BankOpenTask
+
+  Created by Dinesh Kumar on 07/10/20.
+  Copyright © 2020 Dinesh Kumar. All rights reserved.
+*/
+"tripStartTime" = "Start Time";
+"availability" = "Available Seat";
+"busScheduleTitle" = "Bus Schedule";
+"noTimingsText" = "No timings availabel for this route";

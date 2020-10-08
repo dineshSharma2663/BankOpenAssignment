@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K8S-Vw-OhP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="h8g-xL-Ym9">
+            <objects>
+                <navigationController id="K8S-Vw-OhP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eai-eO-jSi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iti-mi-u6W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBb-xJ-6FH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1109" y="-41"/>
+        </scene>
+        <!--Bus Schedule-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BusSchedulesViewController" id="BYZ-38-t0r" customClass="BusSchedulesViewController" customModule="BankOpenTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BusScheduleView" customModule="BankOpenTask" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n18-ig-Gp7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ2-RM-sOX">
+                                        <rect key="frame" x="15" y="0.0" width="384" height="120"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="fDu-XU-bGa"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="15" id="g1e-um-QBr">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="estimatedItemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ibw-Rs-8YL">
+                                        <rect key="frame" x="0.0" y="120" width="414" height="654"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="TIC-f8-jYW">
+                                        <rect key="frame" x="188.5" y="368.5" width="37" height="37"/>
+                                        <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="TIC-f8-jYW" firstAttribute="centerX" secondItem="n18-ig-Gp7" secondAttribute="centerX" id="Coe-Xn-zAQ"/>
+                                    <constraint firstItem="ZJ2-RM-sOX" firstAttribute="leading" secondItem="n18-ig-Gp7" secondAttribute="leading" constant="15" id="GuY-zj-0ZG"/>
+                                    <constraint firstItem="Ibw-Rs-8YL" firstAttribute="top" secondItem="ZJ2-RM-sOX" secondAttribute="bottom" id="NHu-tt-egX"/>
+                                    <constraint firstItem="Ibw-Rs-8YL" firstAttribute="leading" secondItem="n18-ig-Gp7" secondAttribute="leading" id="O4g-0C-EDk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ibw-Rs-8YL" secondAttribute="bottom" id="VbV-PN-J2k"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZJ2-RM-sOX" secondAttribute="trailing" constant="15" id="ccH-bl-qJu"/>
+                                    <constraint firstItem="ZJ2-RM-sOX" firstAttribute="top" secondItem="n18-ig-Gp7" secondAttribute="top" id="dRm-pP-wwD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ibw-Rs-8YL" secondAttribute="trailing" id="dSn-FB-eoz"/>
+                                    <constraint firstItem="TIC-f8-jYW" firstAttribute="centerY" secondItem="n18-ig-Gp7" secondAttribute="centerY" id="wam-P9-6fS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n18-ig-Gp7" secondAttribute="trailing" id="GjI-vo-3Mi"/>
+                            <constraint firstItem="n18-ig-Gp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LBm-1i-2VY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n18-ig-Gp7" secondAttribute="bottom" id="PaE-mG-OV7"/>
+                            <constraint firstItem="n18-ig-Gp7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jBL-z3-Zpx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="activityLoader" destination="TIC-f8-jYW" id="yk2-r6-vLr"/>
+                            <outlet property="collectionView" destination="ZJ2-RM-sOX" id="qNw-SZ-4TQ"/>
+                            <outlet property="tableView" destination="Ibw-Rs-8YL" id="Nrd-0V-Hyp"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bus Schedule" id="LRG-Oy-DpV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="-42"/>
+        </scene>
+    </scenes>
+</document>

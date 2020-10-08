@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RouteInfoCollectionViewCell" id="gTV-IL-0wX" customClass="RouteInfoCollectionViewCell" customModule="BankOpenTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-Td-7KO">
+                        <rect key="frame" x="0.0" y="14" width="225" height="68"/>
+                        <subviews>
+                            <stackView clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cWh-4a-vdd">
+                                <rect key="frame" x="42" y="3.5" width="141.5" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K-12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZF-yG-P46">
+                                        <rect key="frame" x="0.0" y="0.0" width="141.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delhi-Chandigarh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sit-V1-0QR">
+                                        <rect key="frame" x="0.0" y="20.5" width="141.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 hrs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHW-qQ-vP4">
+                                        <rect key="frame" x="0.0" y="41" width="141.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cWh-4a-vdd" firstAttribute="centerX" secondItem="rSN-Td-7KO" secondAttribute="centerX" id="LaC-wi-cpB"/>
+                            <constraint firstItem="cWh-4a-vdd" firstAttribute="centerY" secondItem="rSN-Td-7KO" secondAttribute="centerY" id="p0X-aS-wQd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="rSN-Td-7KO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="03V-11-SAl"/>
+                <constraint firstItem="rSN-Td-7KO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="EK2-LV-dGP"/>
+                <constraint firstAttribute="trailing" secondItem="rSN-Td-7KO" secondAttribute="trailing" id="clm-N6-CZ7"/>
+                <constraint firstAttribute="bottom" secondItem="rSN-Td-7KO" secondAttribute="bottom" constant="14" id="rTQ-M0-RbX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="225" height="96"/>
+            <connections>
+                <outlet property="backView" destination="rSN-Td-7KO" id="d3L-cG-p7K"/>
+                <outlet property="busNameLabel" destination="4ZF-yG-P46" id="dS4-um-TyS"/>
+                <outlet property="routePathLabel" destination="Sit-V1-0QR" id="Y0f-Jh-hPC"/>
+                <outlet property="tripDurationLabel" destination="SHW-qQ-vP4" id="CO5-QY-hFM"/>
+            </connections>
+            <point key="canvasLocation" x="210.86956521739131" y="50.223214285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
